@@ -45,6 +45,7 @@ const loadWordDetails = async(id) =>{
     const data = await res.json();
     displayWordDetails(data.data);
 };
+
 const displayWordDetails = (word) =>{
     const detailsContainer = document.getElementById("details-container");
     detailsContainer.innerHTML = `
@@ -117,3 +118,16 @@ const displayLeason = (leasons) =>{
     }
 }
 loadLeason();
+
+document.getElementById("btn-search").addEventListener("click", () =>{
+    removeActiveClass();
+    const searchInput = document.getElementById("input-search");
+    const searchValue = searchInput.value.trim().toLowerCase();
+    fetch ("https://openapi.programming-hero.com/api/words/all")
+    .then((res) => res.json())
+    .then((data) => {
+        const words = data.data;
+        const filteredWords = words.filter((word) => word.word.toLowerCase().includes(searchValue));
+        displayLevelWord(filteredWords);
+    });
+});
