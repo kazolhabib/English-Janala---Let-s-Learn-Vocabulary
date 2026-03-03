@@ -32,12 +32,12 @@
       <ul
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a href="" class=""><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
-      <li><a href="" class=""><i class="fa-solid fa-book-open"></i> Learn</a></li>
-      <li><a href="" class=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+        <li><a href="#faq" class=""><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+      <li><a href="#learn" class=""><i class="fa-solid fa-book-open"></i> Learn</a></li>
+      <li><a href="#logout" class=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
       </ul>
     </div>
-    <a href="" class="flex items-center gap-1">
+    <a href="./index.html" class="flex items-center gap-1">
         <span class="text-lg font-bold">English</span>
         <img src="./assets/logo.png" alt="logo">
         <span class="font-bangla text-lg font-semibold">জানালা</span>
@@ -45,19 +45,19 @@
   </div>
   <div class="navbar-end hidden lg:flex">
     <ul class="menu menu-horizontal px-1 space-x-4">
-      <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
-      <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a></li>
-      <li><a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+      <li><a href="#faq" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+      <li><a href="#learn" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a></li>
+      <li><a href="#logout" class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
     </ul>
   </div>
 </div>
     </header>
 
-    <section class="flex flex-col-reverse md:flex-row gap-5 justify-between items-center py-5 container mx-auto">
+    <section class="flex flex-col-reverse md:flex-row gap-5 justify-between items-center py-5 container mx-auto px-5">
         <div class="content flex-1 text-center md:text-left">
             <h2 class="text-4xl font-bold mb-8"><span class="text-[#00BCFF]">English</span> is Easy!!</h2>
             <p class="w-full max-w-2xl font-bangla leading-6">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
-            <div class="w-80 mt-10">
+            <div class="w-80 mt-10 mx-auto md:mx-0">
             <fieldset class="w-full fieldset">
           <input type="text" class="input" placeholder="Enter Your Name" /> 
           <div class="space-x-5"></div>  
@@ -73,7 +73,7 @@
         </div>
     </section>
         
-    <section class="py-10 container mx-auto">
+    <section id="learn" class="py-10 container mx-auto px-5">
         <h2 class="text-4xl font-bold mb-8 text-center"><span class="text-[#00BCFF]">Let's</span> Learn Vocabulary</h2>
 
         <div id="level-container" class="flex gap-5 justify-center items-center flex-wrap">
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <section class="container mx-auto flex justify-center mb-10">
+    <section class="container mx-auto flex justify-center mb-10 px-5">
       <div class="join">
   <div>
     <label class="input validator join-item">
@@ -92,11 +92,11 @@
 </div>
     </section>
 
-    <section id="loader" class="flex justify-center items-center py-10 hidden">
+    <section id="loader" class="flex justify-center items-center py-10 px-5 hidden">
       <span class="loading loading-ring loading-xl"></span>
     </section>
 
-    <section id="word-container" class="py-16 container mx-auto bg-gray-100 grid grid-cols-1 md:grid-cols-3 gap-5 p-8 rounded-lg">
+    <section id="word-container" class="py-16 container mx-auto bg-gray-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-8 rounded-lg px-5">
         <div class="text-center col-span-full">
             <p class="text-sm leading-6 font-bangla text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
             <h2 class="text-4xl leading-10 font-medium text-[#292524] pt-3">একটি Lesson Select করুন।</h2>
@@ -119,35 +119,57 @@
     </div>
   </dialog>
 
-  <section class="container mx-auto py-24">
-    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+  <section id="faq" class="container mx-auto py-14 md:py-24 flex flex-col gap-5 px-5">
+    <div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
   <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title font-semibold">1. How can I start learning English on this website?</div>
-  <div class="collapse-content text-sm">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</div>
+  <div class="collapse-title font-medium">1. How can I start learning English on this website?</div>
+  <div class="collapse-content text-sm text-[#62748E]">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</div>
 </div>
-<div class="collapse collapse-plus bg-base-100 border border-base-300">
+<div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
   <input type="radio" name="my-accordion-3" />
-  <div class="collapse-title font-semibold">2. Is this website free to use?</div>
-  <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+  <div class="collapse-title font-medium">2. Is this website free to use?</div>
+  <div class="collapse-content text-sm text-[#62748E]">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
 </div>
-<div class="collapse collapse-plus bg-base-100 border border-base-300">
+<div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
   <input type="radio" name="my-accordion-3" />
-  <div class="collapse-title font-semibold">3. Do I need to create an account?</div>
-  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+  <div class="collapse-title font-medium">3. Do I need to create an account?</div>
+  <div class="collapse-content text-sm text-[#62748E]">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
 </div>
-<div class="collapse collapse-plus bg-base-100 border border-base-300">
+<div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
   <input type="radio" name="my-accordion-3" />
-  <div class="collapse-title font-semibold">4. How can I build my English vocabulary?</div>
-  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+  <div class="collapse-title font-medium">4. How can I build my English vocabulary?</div>
+  <div class="collapse-content text-sm text-[#62748E]">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
 </div>
-<div class="collapse collapse-plus bg-base-100 border border-base-300">
+<div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
   <input type="radio" name="my-accordion-3" />
-  <div class="collapse-title font-semibold">5. Do you offer certificates for completed courses?</div>
-  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+  <div class="collapse-title font-medium">5. Do you offer certificates for completed courses?</div>
+  <div class="collapse-content text-sm text-[#62748E]">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
 </div>
   </section>
 
-    <div class="mb-10"></div>
+  <footer class="bg-[#F8F8F8] p-10 px-5">
+  <div class="footer sm:footer-horizontal container mx-auto">
+    <aside>
+    <a href="./index.html" class="flex items-center gap-1">
+        <span class="text-lg font-bold">English</span>
+        <img src="./assets/logo.png" alt="logo">
+        <span class="font-bangla text-lg font-semibold">জানালা</span>
+    </a>
+    <p class="font-bangla text-xl text-[#546A7F] mt-5">ইংরেজি শিখুন সহজে</p>
+    <p class="text-[#546A7F] mt-2">Providing ED-Tech Applications since 2025</p>
+  </aside>
+  <nav class="flex flex-col sm:ml-auto">
+    <h6 class="footer-title text-[#546A7F] mb-4 text-sm">Follow us</h6>
+    <div class="grid grid-flow-col gap-4 items-center">
+      <a><img src="./assets/fb-thumb.png" alt="Facebook"></a>
+      <a><img src="./assets/youtube-thumb.png" alt="YouTube"></a>
+      <a><img src="./assets/instagram-thumb.png" alt="Instagram"></a>
+      <a><img src="./assets/github-thumb.png" alt="GitHub"></a>
+    </div>
+  </nav>
+  </div>
+</footer>
+
 <script src="./javaScript/script.js"></script>
 <script src="./test.js"></script>
 </body>
